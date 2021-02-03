@@ -103,6 +103,8 @@ def deal_cards(deck, number):
             print(i)
             value_hand += deck[i]
 
+        del deck[i]
+
         print()
         print("Value of this hand is: ", value_hand)
 
