@@ -94,21 +94,21 @@ def deal_cards(deck, number):
         # Deal the cards and accumulate their values.
         to_list = list(deck)
         pick_card = random.sample(to_list, number)
+
+        # Display the value of the hand.
         print()
         print("The cards are: ")
 
         for i in pick_card:
             print(i)
             value_hand += deck[i]
+
         print()
         print("Value of this hand is: ", value_hand)
 
         print()
         pick_again = input("Enter yes to pick again: ")
 
-    # Display the value of the hand.
-
 
 # Call the main function.
-
 main()
